@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Meal shop</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body>
+     <section>
+          <div class="container">
+               <div>
+                    <h1 class="text-success text-center">Welcome To Our Meal Shop</h1>
+               </div>
+               <div class="row">
+                    <div class="col">
+                         <div class="input-group mb-3 w-75 mx-auto">
+                              <input id="search-field" type="text" class="form-control"
+                                   placeholder="Search your favorite food" aria-label="Recipient's username"
+                                   aria-describedby="button-addon2">
+                              <button onclick="loadMeal()" class="btn btn-outline-primary" type="button"
+                                   id="button-addon2">Search</button>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section>
+          <div class="container">
+               <div class="row">
+                    <h3 class="text-primary mx-auto text-center">Filter By Favorite Category!</h3>
+                    <div id="btn-group" class="col text-center mx-auto">
+
+
+
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section>
+          <div class="container">
+               <div class="row">
+                    <div class="col">
+                         <div id="single-meal" class="card border-0 mb-3">
+
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </section>
+     <section>
+          <div class="container">
+               <div id="card-container" class="row row-cols-1 row-cols-md-3 row-cols-lg-4 gy-4">
+
+               </div>
+               <h2 id="error-msg" class="text-danger text-center"></h2>
+          </div>
+     </section>
+     <script src="./scripts/meal.js"></script>
+</body>
+
+</html>
